@@ -2,30 +2,16 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<title>PDP 추천 미리보기 — [1+1] 링클프리 선데이 셔츠</title>
-<style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Pretendard', 'Apple SD Gothic Neo', sans-serif;
-    background: #f7f7f8; color: #1a1a1a; line-height: 1.5;
-}
+<title>PDP 추천 미리보기 v2 — [1+1] 링클프리 선데이 셔츠</title>
+<style>* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Pretendard', 'Apple SD Gothic Neo', sans-serif; background: #f7f7f8; color: #1a1a1a; line-height: 1.5; }
 .wrap { max-width: 1280px; margin: 0 auto; padding: 24px; }
-.header {
-    background: #fff; padding: 16px 24px; border-bottom: 1px solid #e5e5e5;
-    display: flex; align-items: center; gap: 12px;
-}
+.header { background: #fff; padding: 16px 24px; border-bottom: 1px solid #e5e5e5; display: flex; align-items: center; gap: 12px; }
 .logo { font-weight: 800; font-size: 20px; letter-spacing: -0.5px; }
 .crumb { color: #888; font-size: 13px; }
-
-.seed-hero {
-    background: #fff; border-radius: 12px; padding: 32px;
-    margin-bottom: 32px; display: grid; grid-template-columns: 360px 1fr;
-    gap: 32px; box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-}
-.seed-thumb-wrap {
-    width: 100%; aspect-ratio: 1; border-radius: 8px; overflow: hidden;
-    background: #f0f0f0;
-}
+.version-tag { margin-left: auto; padding: 4px 10px; background: #e7f5ff; color: #1971c2; border-radius: 4px; font-size: 11px; font-weight: 700; }
+.seed-hero { background: #fff; border-radius: 12px; padding: 32px; margin-bottom: 32px; display: grid; grid-template-columns: 360px 1fr; gap: 32px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+.seed-thumb-wrap { width: 100%; aspect-ratio: 1; border-radius: 8px; overflow: hidden; background: #f0f0f0; }
 .seed-thumb-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .seed-info h1 { font-size: 24px; font-weight: 700; margin: 8px 0; line-height: 1.3; }
 .seed-brand { font-size: 14px; color: #555; font-weight: 600; }
@@ -33,103 +19,62 @@ body {
 .seed-discount { font-size: 18px; font-weight: 800; color: #d6336c; }
 .seed-origin { font-size: 16px; color: #999; text-decoration: line-through; }
 .seed-sale { font-size: 28px; font-weight: 800; }
-.seed-stats {
-    margin-top: 24px; padding-top: 16px; border-top: 1px solid #f0f0f0;
-    display: flex; gap: 20px; font-size: 13px; color: #555; flex-wrap: wrap;
-}
+.seed-stats { margin-top: 24px; padding-top: 16px; border-top: 1px solid #f0f0f0; display: flex; gap: 20px; font-size: 13px; color: #555; flex-wrap: wrap; }
 .seed-stats span strong { color: #1a1a1a; font-weight: 700; }
-.seed-link {
-    display: inline-block; margin-top: 16px; padding: 10px 16px;
-    background: #1a1a1a; color: #fff; border-radius: 6px;
-    text-decoration: none; font-size: 13px; font-weight: 600;
-}
-
+.seed-link { display: inline-block; margin-top: 16px; padding: 10px 16px; background: #1a1a1a; color: #fff; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600; }
 section { margin-bottom: 40px; }
-.section-head {
-    display: flex; justify-content: space-between; align-items: end;
-    margin-bottom: 16px; padding: 0 4px;
-}
-.section-title { font-size: 20px; font-weight: 700; }
+.section-head { display: flex; justify-content: space-between; align-items: end; margin-bottom: 16px; padding: 0 4px; }
+.section-title { font-size: 22px; font-weight: 800; }
+.section-title.secondary { color: #555; font-size: 18px; }
 .section-sub { font-size: 13px; color: #888; margin-top: 4px; }
 .section-meta { font-size: 12px; color: #888; text-align: right; }
-
-.carousel {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 12px;
-}
-
-.prod-card {
-    background: #fff; border-radius: 8px; overflow: hidden;
-    text-decoration: none; color: inherit; display: flex; flex-direction: column;
-    border: 1px solid #f0f0f0; transition: transform 0.15s, box-shadow 0.15s;
-}
-.prod-card:hover {
-    transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-}
-.thumb-wrap {
-    width: 100%; aspect-ratio: 1; background: #f5f5f7;
-    overflow: hidden;
-}
+.carousel { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.carousel.compact { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+.prod-card { background: #fff; border-radius: 8px; overflow: hidden; text-decoration: none; color: inherit; display: flex; flex-direction: column; border: 1px solid #f0f0f0; transition: transform 0.15s, box-shadow 0.15s; }
+.prod-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.1); }
+.thumb-wrap { width: 100%; aspect-ratio: 1; background: #f5f5f7; overflow: hidden; }
 .thumb { width: 100%; height: 100%; object-fit: cover; display: block; }
 .no-thumb { background: linear-gradient(135deg, #f5f5f7, #e8e8ec); }
-.no-thumb-text {
-    display: flex; align-items: center; justify-content: center;
-    color: #aaa; font-size: 12px;
-}
-
+.no-thumb-text { display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 12px; }
 .info { padding: 10px 12px; }
 .brand { font-size: 11px; color: #555; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; }
-.name {
-    font-size: 13px; line-height: 1.3; margin: 4px 0 6px;
-    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
-    overflow: hidden; min-height: 33px;
-}
+.name { font-size: 13px; line-height: 1.3; margin: 4px 0 6px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 33px; }
 .price-row { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
 .discount { font-size: 13px; font-weight: 800; color: #d6336c; }
 .origin { font-size: 11px; color: #aaa; text-decoration: line-through; }
 .price { font-size: 14px; font-weight: 700; }
 .review { font-size: 11px; color: #555; margin-top: 4px; }
 .review-n { color: #999; }
-
 .badges { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 4px; }
-.badge {
-    font-size: 10px; padding: 2px 6px; border-radius: 3px;
-    font-weight: 600; line-height: 1.4;
-}
+.badge { font-size: 10px; padding: 2px 6px; border-radius: 3px; font-weight: 600; line-height: 1.4; }
+.badge-outfit { background: #fff0f6; color: #c2185b; }
 .badge-n { background: #e7f5ff; color: #1971c2; }
 .badge-lift { background: #fff3bf; color: #846a00; }
 .badge-strong { background: #d3f9d8; color: #2b8a3e; }
 .badge-weak { background: #ffe3e3; color: #c92a2a; }
 .badge-dist { background: #f1f3f5; color: #495057; }
-
-.notice {
-    background: #fff8e1; border-left: 4px solid #fab005;
-    padding: 12px 16px; border-radius: 4px;
-    font-size: 13px; color: #846a00; margin-bottom: 16px;
-}
+.notice { background: #fff8e1; border-left: 4px solid #fab005; padding: 12px 16px; border-radius: 4px; font-size: 13px; color: #846a00; margin-bottom: 16px; }
 .notice strong { color: #5d4a00; }
-
-footer {
-    margin-top: 48px; padding: 24px;
-    text-align: center; color: #888; font-size: 12px;
-}
-</style>
+.collapse-wrap { background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; }
+.collapse-wrap summary { cursor: pointer; font-size: 13px; font-weight: 600; color: #555; list-style: none; outline: none; }
+.collapse-wrap summary::-webkit-details-marker { display: none; }
+.collapse-wrap summary::before { content: '▶ '; display: inline-block; transition: transform 0.2s; font-size: 10px; }
+.collapse-wrap[open] summary::before { transform: rotate(90deg); }
+.collapse-wrap[open] { padding-bottom: 16px; }
+.collapse-wrap .carousel { margin-top: 12px; }
+.outfit-banner { background: linear-gradient(135deg, #fff0f6 0%, #ffe0eb 100%); border-left: 4px solid #d6336c; padding: 14px 18px; border-radius: 6px; font-size: 13px; color: #761d3e; margin-bottom: 16px; }
+.outfit-banner strong { color: #4a0e26; }
+footer { margin-top: 48px; padding: 24px; text-align: center; color: #888; font-size: 12px; }</style>
 </head>
 <body>
-
 <header class="header">
     <span class="logo">athler</span>
     <span class="crumb">상품 / 셔츠 / PDP 추천 미리보기</span>
+    <span class="version-tag">v2 · 카테고리 분리</span>
 </header>
-
 <div class="wrap">
-
-    <!-- SEED -->
     <div class="seed-hero">
-        <div class="seed-thumb-wrap">
-            <img src="https://bindcdn.co.kr/698863-828ffd16-e567-4c78-92e6-fcfe3820e41a.jpg" alt="[1+1] 링클프리 선데이 셔츠">
-        </div>
+        <div class="seed-thumb-wrap"><img src="https://bindcdn.co.kr/698863-828ffd16-e567-4c78-92e6-fcfe3820e41a.jpg" alt="[1+1] 링클프리 선데이 셔츠"></div>
         <div class="seed-info">
             <div class="seed-brand">뉴오브</div>
             <h1>[1+1] 링클프리 선데이 셔츠</h1>
@@ -149,12 +94,15 @@ footer {
     </div>
 
     <section>
+        <div class="outfit-banner">
+            👔 <strong>이 셔츠를 보고 같은 날 함께 둘러본 다른 카테고리 상품</strong>입니다. 코디 의도 신호로 추출 (browse, 표본 30~86명).
+        </div>
         <div class="section-head">
             <div>
-                <div class="section-title">👀 함께 본 상품</div>
-                <div class="section-sub">같은 날 같은 유저가 함께 둘러본 상품 (co-browse)</div>
+                <div class="section-title">👔 이 셔츠랑 함께 입어보세요</div>
+                <div class="section-sub">아우터 7 · 니트 4 · 하의 2 · 정장 1</div>
             </div>
-            <div class="section-meta">20개 · 표본 30~86명<br><strong style="color:#2b8a3e">★ 권장 노출 영역</strong></div>
+            <div class="section-meta">14개 · 코디 후보<br><strong style="color:#d6336c">★ 메인 노출 영역</strong></div>
         </div>
         <div class="carousel">
 <a class="prod-card" href="https://athler.kr/product/4726758" target="_blank" rel="noopener">
@@ -164,7 +112,7 @@ footer {
 <div class="name">클래식 스웨이드 자켓</div>
 <div class="price-row"><span class="discount">65%</span><span class="origin">₩124,000</span><span class="price">₩43,500</span></div>
 <div class="review">★ 4.9 <span class="review-n">(150)</span></div>
-<div class="badges"><span class="badge badge-n">함께 본 86회</span><span class="badge badge-lift">lift 7.7</span></div>
+<div class="badges"><span class="badge badge-outfit">아우터</span><span class="badge badge-n">함께 본 86회</span></div>
 </div>
 </a>
 <a class="prod-card" href="https://athler.kr/product/4726816" target="_blank" rel="noopener">
@@ -174,17 +122,7 @@ footer {
 <div class="name">캐시라이크 니트</div>
 <div class="price-row"><span class="discount">63%</span><span class="origin">₩89,000</span><span class="price">₩33,000</span></div>
 <div class="review">★ 4.9 <span class="review-n">(157)</span></div>
-<div class="badges"><span class="badge badge-n">함께 본 69회</span><span class="badge badge-lift">lift 7.0</span></div>
-</div>
-</a>
-<a class="prod-card" href="https://athler.kr/product/4543362" target="_blank" rel="noopener">
-<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/641851-2f5b91ed-34e2-45fd-acf3-bbed063557cc.jpg" alt="1+1 모달 스트레치 드레스 셔츠 IMFFMDS110" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
-<div class="info">
-<div class="brand">인터메조</div>
-<div class="name">1+1 모달 스트레치 드레스 셔츠 IMFFMDS110</div>
-<div class="price-row"><span class="discount">41%</span><span class="origin">₩125,000</span><span class="price">₩73,680</span></div>
-<div class="review">★ 5.0 <span class="review-n">(173)</span></div>
-<div class="badges"><span class="badge badge-n">함께 본 69회</span><span class="badge badge-lift">lift 25.8</span></div>
+<div class="badges"><span class="badge badge-outfit">니트</span><span class="badge badge-n">함께 본 69회</span></div>
 </div>
 </a>
 <a class="prod-card" href="https://athler.kr/product/4797355" target="_blank" rel="noopener">
@@ -194,7 +132,139 @@ footer {
 <div class="name">[1+1] 카라 니트 가디건 2종</div>
 <div class="price-row"><span class="price">₩93,000</span></div>
 <div class="review">★ 5.0 <span class="review-n">(10)</span></div>
-<div class="badges"><span class="badge badge-n">함께 본 63회</span><span class="badge badge-lift">lift 49.3</span></div>
+<div class="badges"><span class="badge badge-outfit">니트</span><span class="badge badge-n">함께 본 63회</span></div>
+</div>
+</a>
+<a class="prod-card" href="https://athler.kr/product/3408442" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/31876-2efe5264-1088-41d7-b46d-a3d68dc66a7b.jpg" alt="[1+1] 할인 아몬드 카라 긴팔 니트 SNC1017" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">해리슨</div>
+<div class="name">[1+1] 할인 아몬드 카라 긴팔 니트 SNC1017</div>
+<div class="price-row"><span class="discount">65%</span><span class="origin">₩104,100</span><span class="price">₩36,800</span></div>
+<div class="review">★ 4.9 <span class="review-n">(106)</span></div>
+<div class="badges"><span class="badge badge-outfit">니트</span><span class="badge badge-n">함께 본 45회</span></div>
+</div>
+</a>
+<a class="prod-card" href="https://athler.kr/product/4760883" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/31876-d915ac25-a42b-4505-a114-eb68e2cccf60.jpg" alt="[1+1] 10부 옆밴딩 슬렉스 SJ1050" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">해리슨</div>
+<div class="name">[1+1] 10부 옆밴딩 슬렉스 SJ1050</div>
+<div class="price-row"><span class="discount">66%</span><span class="origin">₩109,600</span><span class="price">₩37,800</span></div>
+<div class="review">★ 4.9 <span class="review-n">(447)</span></div>
+<div class="badges"><span class="badge badge-outfit">하의</span><span class="badge badge-n">함께 본 42회</span></div>
+</div>
+</a>
+<a class="prod-card" href="https://athler.kr/product/4761338" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/854550-1bcb3b64-2982-4780-a7d8-3adfbfd17583.jpg" alt="노카라 리버시블 자켓" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">로웬</div>
+<div class="name">노카라 리버시블 자켓</div>
+<div class="price-row"><span class="discount">70%</span><span class="origin">₩117,700</span><span class="price">₩34,800</span></div>
+<div class="review">★ 5.0 <span class="review-n">(128)</span></div>
+<div class="badges"><span class="badge badge-outfit">아우터</span><span class="badge badge-n">함께 본 40회</span></div>
+</div>
+</a>
+<a class="prod-card" href="https://athler.kr/product/2984847" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/196625-bd1b267e-c66a-41b3-84da-2d6e9c25aff6.jpg" alt="[3팩 묶음할인] 구김없는 링클프리 스판 정장 와이셔츠" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">제임스핏</div>
+<div class="name">[3팩 묶음할인] 구김없는 링클프리 스판 정장 와이셔츠</div>
+<div class="price-row"><span class="discount">64%</span><span class="origin">₩329,000</span><span class="price">₩117,900</span></div>
+<div class="review">★ 4.9 <span class="review-n">(39)</span></div>
+<div class="badges"><span class="badge badge-outfit">정장</span><span class="badge badge-n">함께 본 38회</span></div>
+</div>
+</a>
+<a class="prod-card" href="https://athler.kr/product/4867898" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/xEj6GVlMdT6DbbBx-3LVW6tg2M2vt_KpKivEKZO-FXo.jpg" alt="스웨이드 트러커 점퍼_베이지 (베이직핏)_SJPWA01NSD" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">STCO</div>
+<div class="name">스웨이드 트러커 점퍼_베이지 (베이직핏)_SJPWA01NSD</div>
+<div class="price-row"><span class="discount">32%</span><span class="origin">₩139,000</span><span class="price">₩94,900</span></div>
+<div class="review">★ 5.0 <span class="review-n">(3)</span></div>
+<div class="badges"><span class="badge badge-outfit">아우터</span><span class="badge badge-n">함께 본 33회</span></div>
+</div>
+</a>
+<a class="prod-card" href="https://athler.kr/product/4329627" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/JezkYQGGGCTQu6ChqiRGssZBQsh0-gKLYOHS-ukVlgs.jpg" alt="UA 언스타퍼블 테이퍼드 트레이닝복 긴바지 팬츠 (6003861-299)" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">언더아머</div>
+<div class="name">UA 언스타퍼블 테이퍼드 트레이닝복 긴바지 팬츠 (6003861-299)</div>
+<div class="price-row"><span class="price">₩75,000</span></div>
+<div class="review">★ 5.0 <span class="review-n">(14)</span></div>
+<div class="badges"><span class="badge badge-outfit">하의</span><span class="badge badge-n">함께 본 30회</span></div>
+</div>
+</a>
+<a class="prod-card" href="https://athler.kr/product/4912203" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/641851-2e97b331-33a7-4d9e-91c7-720719bc3dd8.jpg" alt="인터메조 울 브랜디드 저지 집업 자켓 3종 택1 IMEFMJP108" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">인터메조</div>
+<div class="name">인터메조 울 브랜디드 저지 집업 자켓 3종 택1 IMEFMJP108</div>
+<div class="price-row"><span class="discount">2%</span><span class="origin">₩59,000</span><span class="price">₩58,000</span></div>
+<div class="review">★ 4.9 <span class="review-n">(54)</span></div>
+<div class="badges"><span class="badge badge-outfit">아우터</span><span class="badge badge-n">함께 본 30회</span></div>
+</div>
+</a>
+<a class="prod-card" href="https://athler.kr/product/3140159" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/93936-be3878aa-74b7-4d8a-a8dc-30be5b7a3801.jpg" alt="[1+1+1] 케이블 카라 니트 3종 set" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">세르즈블랑코</div>
+<div class="name">[1+1+1] 케이블 카라 니트 3종 set</div>
+<div class="price-row"><span class="price">₩132,000</span></div>
+<div class="review">★ 4.9 <span class="review-n">(89)</span></div>
+<div class="badges"><span class="badge badge-outfit">니트</span><span class="badge badge-n">함께 본 28회</span></div>
+</div>
+</a>
+<a class="prod-card" href="https://athler.kr/product/4761337" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/854550-6d6485c8-0144-4de7-9cbe-369a10b84ae8.jpg" alt="남녀공용 노카라 라운드넥 패딩" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">로웬</div>
+<div class="name">남녀공용 노카라 라운드넥 패딩</div>
+<div class="price-row"><span class="discount">73%</span><span class="origin">₩219,500</span><span class="price">₩58,800</span></div>
+<div class="review">★ 4.9 <span class="review-n">(93)</span></div>
+<div class="badges"><span class="badge badge-outfit">아우터</span><span class="badge badge-n">함께 본 27회</span></div>
+</div>
+</a>
+<a class="prod-card" href="https://athler.kr/product/3624134" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/31876-6dda2191-b6f4-486e-aac3-8a8cd8abeb65.jpg" alt="클래식 오버핏 U넥 코듀로이 가디건 HA-1001 MMO1001" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">해리슨</div>
+<div class="name">클래식 오버핏 U넥 코듀로이 가디건 HA-1001 MMO1001</div>
+<div class="price-row"><span class="discount">78%</span><span class="origin">₩117,700</span><span class="price">₩25,800</span></div>
+<div class="review">★ 4.9 <span class="review-n">(386)</span></div>
+<div class="badges"><span class="badge badge-outfit">아우터</span><span class="badge badge-n">함께 본 26회</span></div>
+</div>
+</a>
+<a class="prod-card" href="https://athler.kr/product/4658882" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/HefglliEaF7RWe2uqKzTkBE-QlO5HRsEKdbb4DmDoxo.jpg" alt="[COMFY]울혼방라운드넥세미오버핏가디건 MZCD71A1" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">마인드브릿지</div>
+<div class="name">[COMFY]울혼방라운드넥세미오버핏가디건 MZCD71A1</div>
+<div class="price-row"><span class="discount">39%</span><span class="origin">₩99,000</span><span class="price">₩59,900</span></div>
+<div class="review">★ 5.0 <span class="review-n">(62)</span></div>
+<div class="badges"><span class="badge badge-outfit">아우터</span><span class="badge badge-n">함께 본 26회</span></div>
+</div>
+</a>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-head">
+            <div>
+                <div class="section-title secondary">🔄 비슷한 셔츠 더 보기</div>
+                <div class="section-sub">같은 셔츠 카테고리에서 함께 본 상품 (대체재 비교용)</div>
+            </div>
+            <div class="section-meta">6개 · 셔츠만</div>
+        </div>
+        <div class="carousel">
+<a class="prod-card" href="https://athler.kr/product/4543362" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/641851-2f5b91ed-34e2-45fd-acf3-bbed063557cc.jpg" alt="1+1 모달 스트레치 드레스 셔츠 IMFFMDS110" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">인터메조</div>
+<div class="name">1+1 모달 스트레치 드레스 셔츠 IMFFMDS110</div>
+<div class="price-row"><span class="discount">41%</span><span class="origin">₩125,000</span><span class="price">₩73,680</span></div>
+<div class="review">★ 5.0 <span class="review-n">(173)</span></div>
+<div class="badges"><span class="badge badge-n">함께 본 69회</span><span class="badge badge-lift">lift 25.8</span></div>
 </div>
 </a>
 <a class="prod-card" href="https://athler.kr/product/4097706" target="_blank" rel="noopener">
@@ -207,16 +277,6 @@ footer {
 <div class="badges"><span class="badge badge-n">함께 본 57회</span><span class="badge badge-lift">lift 9.1</span></div>
 </div>
 </a>
-<a class="prod-card" href="https://athler.kr/product/3408442" target="_blank" rel="noopener">
-<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/31876-2efe5264-1088-41d7-b46d-a3d68dc66a7b.jpg" alt="[1+1] 할인 아몬드 카라 긴팔 니트 SNC1017" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
-<div class="info">
-<div class="brand">해리슨</div>
-<div class="name">[1+1] 할인 아몬드 카라 긴팔 니트 SNC1017</div>
-<div class="price-row"><span class="discount">65%</span><span class="origin">₩104,100</span><span class="price">₩36,800</span></div>
-<div class="review">★ 4.9 <span class="review-n">(106)</span></div>
-<div class="badges"><span class="badge badge-n">함께 본 45회</span><span class="badge badge-lift">lift 19.4</span></div>
-</div>
-</a>
 <a class="prod-card" href="https://athler.kr/product/4945818" target="_blank" rel="noopener">
 <div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/_gyvoLkWzFATD7IbPZ9m_otXLg2DPKtgGtxJPSzjZyM.jpg" alt="크리즈 풀오버 셔츠 (NEE2WC1906)" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
 <div class="info">
@@ -225,36 +285,6 @@ footer {
 <div class="price-row"><span class="discount">71%</span><span class="origin">₩109,000</span><span class="price">₩32,000</span></div>
 <div class="review">★ 4.9 <span class="review-n">(59)</span></div>
 <div class="badges"><span class="badge badge-n">함께 본 45회</span><span class="badge badge-lift">lift 71.6</span></div>
-</div>
-</a>
-<a class="prod-card" href="https://athler.kr/product/4760883" target="_blank" rel="noopener">
-<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/31876-d915ac25-a42b-4505-a114-eb68e2cccf60.jpg" alt="[1+1] 10부 옆밴딩 슬렉스 SJ1050" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
-<div class="info">
-<div class="brand">해리슨</div>
-<div class="name">[1+1] 10부 옆밴딩 슬렉스 SJ1050</div>
-<div class="price-row"><span class="discount">66%</span><span class="origin">₩109,600</span><span class="price">₩37,800</span></div>
-<div class="review">★ 4.9 <span class="review-n">(447)</span></div>
-<div class="badges"><span class="badge badge-n">함께 본 42회</span><span class="badge badge-lift">lift 8.0</span></div>
-</div>
-</a>
-<a class="prod-card" href="https://athler.kr/product/4761338" target="_blank" rel="noopener">
-<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/854550-1bcb3b64-2982-4780-a7d8-3adfbfd17583.jpg" alt="노카라 리버시블 자켓" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
-<div class="info">
-<div class="brand">로웬</div>
-<div class="name">노카라 리버시블 자켓</div>
-<div class="price-row"><span class="discount">70%</span><span class="origin">₩117,700</span><span class="price">₩34,800</span></div>
-<div class="review">★ 5.0 <span class="review-n">(128)</span></div>
-<div class="badges"><span class="badge badge-n">함께 본 40회</span><span class="badge badge-lift">lift 4.9</span></div>
-</div>
-</a>
-<a class="prod-card" href="https://athler.kr/product/2984847" target="_blank" rel="noopener">
-<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/196625-bd1b267e-c66a-41b3-84da-2d6e9c25aff6.jpg" alt="[3팩 묶음할인] 구김없는 링클프리 스판 정장 와이셔츠" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
-<div class="info">
-<div class="brand">제임스핏</div>
-<div class="name">[3팩 묶음할인] 구김없는 링클프리 스판 정장 와이셔츠</div>
-<div class="price-row"><span class="discount">64%</span><span class="origin">₩329,000</span><span class="price">₩117,900</span></div>
-<div class="review">★ 4.9 <span class="review-n">(39)</span></div>
-<div class="badges"><span class="badge badge-n">함께 본 38회</span><span class="badge badge-lift">lift 60.2</span></div>
 </div>
 </a>
 <a class="prod-card" href="https://athler.kr/product/4543361" target="_blank" rel="noopener">
@@ -267,16 +297,6 @@ footer {
 <div class="badges"><span class="badge badge-n">함께 본 33회</span><span class="badge badge-lift">lift 12.4</span></div>
 </div>
 </a>
-<a class="prod-card" href="https://athler.kr/product/4867898" target="_blank" rel="noopener">
-<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/xEj6GVlMdT6DbbBx-3LVW6tg2M2vt_KpKivEKZO-FXo.jpg" alt="스웨이드 트러커 점퍼_베이지 (베이직핏)_SJPWA01NSD" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
-<div class="info">
-<div class="brand">STCO</div>
-<div class="name">스웨이드 트러커 점퍼_베이지 (베이직핏)_SJPWA01NSD</div>
-<div class="price-row"><span class="discount">32%</span><span class="origin">₩139,000</span><span class="price">₩94,900</span></div>
-<div class="review">★ 5.0 <span class="review-n">(3)</span></div>
-<div class="badges"><span class="badge badge-n">함께 본 33회</span><span class="badge badge-lift">lift 51.2</span></div>
-</div>
-</a>
 <a class="prod-card" href="https://athler.kr/product/4770245" target="_blank" rel="noopener">
 <div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/JC-o_0Amnh3P4NctgCtr6kwkN8U1KxkMe4ZlDRHlX84.jpg" alt="[예작] 2025 BEST 사계절용 긴소매 셔츠 12종 택1" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
 <div class="info">
@@ -285,26 +305,6 @@ footer {
 <div class="price-row"><span class="discount">82%</span><span class="origin">₩149,000</span><span class="price">₩27,500</span></div>
 <div class="review">★ 5.0 <span class="review-n">(104)</span></div>
 <div class="badges"><span class="badge badge-n">함께 본 31회</span><span class="badge badge-lift">lift 19.2</span></div>
-</div>
-</a>
-<a class="prod-card" href="https://athler.kr/product/4329627" target="_blank" rel="noopener">
-<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/JezkYQGGGCTQu6ChqiRGssZBQsh0-gKLYOHS-ukVlgs.jpg" alt="UA 언스타퍼블 테이퍼드 트레이닝복 긴바지 팬츠 (6003861-299)" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
-<div class="info">
-<div class="brand">언더아머</div>
-<div class="name">UA 언스타퍼블 테이퍼드 트레이닝복 긴바지 팬츠 (6003861-299)</div>
-<div class="price-row"><span class="price">₩75,000</span></div>
-<div class="review">★ 5.0 <span class="review-n">(14)</span></div>
-<div class="badges"><span class="badge badge-n">함께 본 30회</span><span class="badge badge-lift">lift 10.3</span></div>
-</div>
-</a>
-<a class="prod-card" href="https://athler.kr/product/4912203" target="_blank" rel="noopener">
-<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/641851-2e97b331-33a7-4d9e-91c7-720719bc3dd8.jpg" alt="인터메조 울 브랜디드 저지 집업 자켓 3종 택1 IMEFMJP108" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
-<div class="info">
-<div class="brand">인터메조</div>
-<div class="name">인터메조 울 브랜디드 저지 집업 자켓 3종 택1 IMEFMJP108</div>
-<div class="price-row"><span class="discount">2%</span><span class="origin">₩59,000</span><span class="price">₩58,000</span></div>
-<div class="review">★ 4.9 <span class="review-n">(54)</span></div>
-<div class="badges"><span class="badge badge-n">함께 본 30회</span><span class="badge badge-lift">lift 10.3</span></div>
 </div>
 </a>
 <a class="prod-card" href="https://athler.kr/product/1792956" target="_blank" rel="noopener">
@@ -317,58 +317,18 @@ footer {
 <div class="badges"><span class="badge badge-n">함께 본 29회</span><span class="badge badge-lift">lift 43.1</span></div>
 </div>
 </a>
-<a class="prod-card" href="https://athler.kr/product/3140159" target="_blank" rel="noopener">
-<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/93936-be3878aa-74b7-4d8a-a8dc-30be5b7a3801.jpg" alt="[1+1+1] 케이블 카라 니트 3종 set" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
-<div class="info">
-<div class="brand">세르즈블랑코</div>
-<div class="name">[1+1+1] 케이블 카라 니트 3종 set</div>
-<div class="price-row"><span class="price">₩132,000</span></div>
-<div class="review">★ 4.9 <span class="review-n">(89)</span></div>
-<div class="badges"><span class="badge badge-n">함께 본 28회</span><span class="badge badge-lift">lift 19.8</span></div>
-</div>
-</a>
-<a class="prod-card" href="https://athler.kr/product/4761337" target="_blank" rel="noopener">
-<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/854550-6d6485c8-0144-4de7-9cbe-369a10b84ae8.jpg" alt="남녀공용 노카라 라운드넥 패딩" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
-<div class="info">
-<div class="brand">로웬</div>
-<div class="name">남녀공용 노카라 라운드넥 패딩</div>
-<div class="price-row"><span class="discount">73%</span><span class="origin">₩219,500</span><span class="price">₩58,800</span></div>
-<div class="review">★ 4.9 <span class="review-n">(93)</span></div>
-<div class="badges"><span class="badge badge-n">함께 본 27회</span><span class="badge badge-lift">lift 3.2</span></div>
-</div>
-</a>
-<a class="prod-card" href="https://athler.kr/product/3624134" target="_blank" rel="noopener">
-<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/31876-6dda2191-b6f4-486e-aac3-8a8cd8abeb65.jpg" alt="클래식 오버핏 U넥 코듀로이 가디건 HA-1001 MMO1001" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
-<div class="info">
-<div class="brand">해리슨</div>
-<div class="name">클래식 오버핏 U넥 코듀로이 가디건 HA-1001 MMO1001</div>
-<div class="price-row"><span class="discount">78%</span><span class="origin">₩117,700</span><span class="price">₩25,800</span></div>
-<div class="review">★ 4.9 <span class="review-n">(386)</span></div>
-<div class="badges"><span class="badge badge-n">함께 본 26회</span><span class="badge badge-lift">lift 4.2</span></div>
-</div>
-</a>
-<a class="prod-card" href="https://athler.kr/product/4658882" target="_blank" rel="noopener">
-<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/HefglliEaF7RWe2uqKzTkBE-QlO5HRsEKdbb4DmDoxo.jpg" alt="[COMFY]울혼방라운드넥세미오버핏가디건 MZCD71A1" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
-<div class="info">
-<div class="brand">마인드브릿지</div>
-<div class="name">[COMFY]울혼방라운드넥세미오버핏가디건 MZCD71A1</div>
-<div class="price-row"><span class="discount">39%</span><span class="origin">₩99,000</span><span class="price">₩59,900</span></div>
-<div class="review">★ 5.0 <span class="review-n">(62)</span></div>
-<div class="badges"><span class="badge badge-n">함께 본 26회</span><span class="badge badge-lift">lift 9.8</span></div>
-</div>
-</a>
         </div>
     </section>
 
     <section>
         <div class="section-head">
             <div>
-                <div class="section-title">🛒 함께 산 상품 (강한 신호)</div>
+                <div class="section-title secondary">🛒 함께 산 상품</div>
                 <div class="section-sub">실제 구매 동행 lifetime, n≥2</div>
             </div>
             <div class="section-meta">1개 · 신뢰 가능</div>
         </div>
-        <div class="carousel">
+        <div class="carousel compact">
 <a class="prod-card" href="https://athler.kr/product/4462788" target="_blank" rel="noopener">
 <div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/VK8FTmYjoDz5xqCzilqM-HurtzdGCzfnKipl-O7PQpc.jpg" alt="에센셜 모던핏 스트라이프 셔츠 (아이보리)" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
 <div class="info">
@@ -376,24 +336,18 @@ footer {
 <div class="name">에센셜 모던핏 스트라이프 셔츠 (아이보리)</div>
 <div class="price-row"><span class="discount">30%</span><span class="origin">₩59,000</span><span class="price">₩41,300</span></div>
 <div class="review">★ 5.0 <span class="review-n">(2)</span></div>
-<div class="badges"><span class="badge badge-strong">함께 산 2명</span><span class="badge badge-lift">lift 367</span></div>
+<div class="badges"><span class="badge badge-strong">함께 산 2명</span></div>
 </div>
 </a>
         </div>
     </section>
 
-    <section>
-        <div class="section-head">
-            <div>
-                <div class="section-title">🛒 함께 산 상품 (약한 신호)</div>
-                <div class="section-sub">공동구매 1명 — 참고용</div>
-            </div>
-            <div class="section-meta">10개 · 운영 시 숨김 권장</div>
+    <details class="collapse-wrap">
+        <summary>🛒 함께 산 상품 (약한 신호 · n=1) — 보기 (16개)</summary>
+        <div class="notice" style="margin-top:12px">
+            <strong>주의:</strong> 단 1명만 두 상품을 같이 구매한 경우입니다. lift는 높아 보이지만 분모가 1이라 통계적 유의성 낮음. 운영 노출 비권장.
         </div>
-        <div class="notice">
-            <strong>주의:</strong> 단 1명만 두 상품을 같이 구매한 경우입니다. lift 값이 높아 보이지만 분모가 1이라 통계적 유의성이 낮습니다.
-        </div>
-        <div class="carousel">
+        <div class="carousel compact">
 <a class="prod-card" href="https://athler.kr/product/4497920" target="_blank" rel="noopener">
 <div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/Thgkc7dBQQ_z82CmW2fJZ5ed2BTbasp-XfJHfofc0dU.jpg" alt="화이트 반팔 크루넥 티셔츠 (HZTS5B501WT)" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
 <div class="info">
@@ -401,17 +355,7 @@ footer {
 <div class="name">화이트 반팔 크루넥 티셔츠 (HZTS5B501WT)</div>
 <div class="price-row"><span class="discount">30%</span><span class="origin">₩109,000</span><span class="price">₩76,300</span></div>
 <div class="review">★ 5.0 <span class="review-n">(5)</span></div>
-<div class="badges"><span class="badge badge-weak">함께 산 1명</span><span class="badge badge-lift">lift 3853</span></div>
-</div>
-</a>
-<a class="prod-card" href="https://athler.kr/product/4799737" target="_blank" rel="noopener">
-<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/698863-bf2462cb-375c-4165-9169-8d8532b5a5b2.jpg" alt="[1+1] 링클프리 와플 긴팔 카라티" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
-<div class="info">
-<div class="brand">뉴오브</div>
-<div class="name">[1+1] 링클프리 와플 긴팔 카라티</div>
-<div class="price-row"><span class="price">₩59,500</span></div>
-<div class="review">★ 5.0 <span class="review-n">(4)</span></div>
-<div class="badges"><span class="badge badge-weak">함께 산 1명</span><span class="badge badge-lift">lift 1927</span></div>
+<div class="badges"><span class="badge badge-weak">함께 산 1명</span></div>
 </div>
 </a>
 <a class="prod-card" href="https://athler.kr/product/4945821" target="_blank" rel="noopener">
@@ -421,17 +365,7 @@ footer {
 <div class="name">린넨 스트라이프 데일리 셔츠 (NEE2WC1903_B)</div>
 <div class="price-row"><span class="discount">68%</span><span class="origin">₩99,000</span><span class="price">₩32,000</span></div>
 <div class="review">★ 5.0 <span class="review-n">(2)</span></div>
-<div class="badges"><span class="badge badge-weak">함께 산 1명</span><span class="badge badge-lift">lift 1927</span></div>
-</div>
-</a>
-<a class="prod-card" href="https://athler.kr/product/4821466" target="_blank" rel="noopener">
-<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/JOOnATVuem3ouDfpbcMQLm5nIjPZ9eXl5akYP0bN7Ko.jpg" alt="에센셜 카라 반팔 니트 콘크리트그레이  (IESW5E501CG)" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
-<div class="info">
-<div class="brand">일꼬르소</div>
-<div class="name">에센셜 카라 반팔 니트 콘크리트그레이  (IESW5E501CG)</div>
-<div class="price-row"><span class="discount">30%</span><span class="origin">₩39,000</span><span class="price">₩27,300</span></div>
-<div class="review">★ 5.0 <span class="review-n">(2)</span></div>
-<div class="badges"><span class="badge badge-weak">함께 산 1명</span><span class="badge badge-lift">lift 771</span></div>
+<div class="badges"><span class="badge badge-weak">함께 산 1명</span></div>
 </div>
 </a>
 <a class="prod-card" href="https://athler.kr/product/4947453" target="_blank" rel="noopener">
@@ -441,27 +375,7 @@ footer {
 <div class="name">남성 포켓 포인트 펀칭 반팔 티셔츠</div>
 <div class="price-row"><span class="discount">84%</span><span class="origin">₩238,000</span><span class="price">₩39,000</span></div>
 <div class="review">★ 4.9 <span class="review-n">(19)</span></div>
-<div class="badges"><span class="badge badge-weak">함께 산 1명</span><span class="badge badge-lift">lift 771</span></div>
-</div>
-</a>
-<a class="prod-card" href="https://athler.kr/product/3634529" target="_blank" rel="noopener">
-<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/70986-e4aa948b-ae83-466a-b633-49680c6b3681.jpg" alt="무광 레더 자동 벨트 (PIALA0203)" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
-<div class="info">
-<div class="brand">지이크</div>
-<div class="name">무광 레더 자동 벨트 (PIALA0203)</div>
-<div class="price-row"><span class="discount">62%</span><span class="origin">₩79,000</span><span class="price">₩29,900</span></div>
-<div class="review">★ 5.0 <span class="review-n">(27)</span></div>
-<div class="badges"><span class="badge badge-weak">함께 산 1명</span><span class="badge badge-lift">lift 296</span></div>
-</div>
-</a>
-<a class="prod-card" href="https://athler.kr/product/4709291" target="_blank" rel="noopener">
-<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/641851-47654e7f-76f0-4da7-9c3e-b5d81219d927.jpg" alt="카라넥 집업 점퍼 3종택1 IMFFMJP108" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
-<div class="info">
-<div class="brand">인터메조</div>
-<div class="name">카라넥 집업 점퍼 3종택1 IMFFMJP108</div>
-<div class="price-row"><span class="discount">60%</span><span class="origin">₩130,000</span><span class="price">₩52,630</span></div>
-<div class="review">★ 4.9 <span class="review-n">(37)</span></div>
-<div class="badges"><span class="badge badge-weak">함께 산 1명</span><span class="badge badge-lift">lift 183</span></div>
+<div class="badges"><span class="badge badge-weak">함께 산 1명</span></div>
 </div>
 </a>
 <a class="prod-card" href="https://athler.kr/product/4043385" target="_blank" rel="noopener">
@@ -471,17 +385,7 @@ footer {
 <div class="name">스트라이프 셔츠 (FIBAA5307)</div>
 <div class="price-row"><span class="discount">80%</span><span class="origin">₩119,000</span><span class="price">₩23,800</span></div>
 <div class="review">★ 4.9 <span class="review-n">(75)</span></div>
-<div class="badges"><span class="badge badge-weak">함께 산 1명</span><span class="badge badge-lift">lift 161</span></div>
-</div>
-</a>
-<a class="prod-card" href="https://athler.kr/product/3665052" target="_blank" rel="noopener">
-<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/S7bTCpalHaFThUlxBD5ZzwvL_zgiEMDXdLsN_ezfd70.jpg" alt="오버핏 베이직 미니멀 집업 레더 자켓 DRJP9267" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
-<div class="info">
-<div class="brand">후앙스</div>
-<div class="name">오버핏 베이직 미니멀 집업 레더 자켓 DRJP9267</div>
-<div class="price-row"><span class="discount">71%</span><span class="origin">₩216,300</span><span class="price">₩61,800</span></div>
-<div class="review">★ 5.0 <span class="review-n">(24)</span></div>
-<div class="badges"><span class="badge badge-weak">함께 산 1명</span><span class="badge badge-lift">lift 161</span></div>
+<div class="badges"><span class="badge badge-weak">함께 산 1명</span></div>
 </div>
 </a>
 <a class="prod-card" href="https://athler.kr/product/4945818" target="_blank" rel="noopener">
@@ -491,21 +395,91 @@ footer {
 <div class="name">크리즈 풀오버 셔츠 (NEE2WC1906)</div>
 <div class="price-row"><span class="discount">71%</span><span class="origin">₩109,000</span><span class="price">₩32,000</span></div>
 <div class="review">★ 4.9 <span class="review-n">(59)</span></div>
-<div class="badges"><span class="badge badge-weak">함께 산 1명</span><span class="badge badge-lift">lift 148</span></div>
+<div class="badges"><span class="badge badge-weak">함께 산 1명</span></div>
+</div>
+</a>
+<a class="prod-card" href="https://athler.kr/product/4216312" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/70986-d0bacb0e-3f43-4909-97a9-a9424f4d7fc7.jpg" alt="와이드 스프레드 코튼 와이셔츠 블루 (PHBAH5004)" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">지이크</div>
+<div class="name">와이드 스프레드 코튼 와이셔츠 블루 (PHBAH5004)</div>
+<div class="price-row"><span class="discount">84%</span><span class="origin">₩159,000</span><span class="price">₩25,600</span></div>
+<div class="review">★ 4.9 <span class="review-n">(52)</span></div>
+<div class="badges"><span class="badge badge-weak">함께 산 1명</span></div>
+</div>
+</a>
+<a class="prod-card" href="https://athler.kr/product/4799737" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/698863-bf2462cb-375c-4165-9169-8d8532b5a5b2.jpg" alt="[1+1] 링클프리 와플 긴팔 카라티" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">뉴오브</div>
+<div class="name">[1+1] 링클프리 와플 긴팔 카라티</div>
+<div class="price-row"><span class="price">₩59,500</span></div>
+<div class="review">★ 5.0 <span class="review-n">(4)</span></div>
+<div class="badges"><span class="badge badge-weak">함께 산 1명</span></div>
+</div>
+</a>
+<a class="prod-card" href="https://athler.kr/product/4821466" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/JOOnATVuem3ouDfpbcMQLm5nIjPZ9eXl5akYP0bN7Ko.jpg" alt="에센셜 카라 반팔 니트 콘크리트그레이  (IESW5E501CG)" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">일꼬르소</div>
+<div class="name">에센셜 카라 반팔 니트 콘크리트그레이  (IESW5E501CG)</div>
+<div class="price-row"><span class="discount">30%</span><span class="origin">₩39,000</span><span class="price">₩27,300</span></div>
+<div class="review">★ 5.0 <span class="review-n">(2)</span></div>
+<div class="badges"><span class="badge badge-weak">함께 산 1명</span></div>
+</div>
+</a>
+<a class="prod-card" href="https://athler.kr/product/3634529" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/70986-e4aa948b-ae83-466a-b633-49680c6b3681.jpg" alt="무광 레더 자동 벨트 (PIALA0203)" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">지이크</div>
+<div class="name">무광 레더 자동 벨트 (PIALA0203)</div>
+<div class="price-row"><span class="discount">62%</span><span class="origin">₩79,000</span><span class="price">₩29,900</span></div>
+<div class="review">★ 5.0 <span class="review-n">(27)</span></div>
+<div class="badges"><span class="badge badge-weak">함께 산 1명</span></div>
+</div>
+</a>
+<a class="prod-card" href="https://athler.kr/product/4709291" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/641851-47654e7f-76f0-4da7-9c3e-b5d81219d927.jpg" alt="카라넥 집업 점퍼 3종택1 IMFFMJP108" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">인터메조</div>
+<div class="name">카라넥 집업 점퍼 3종택1 IMFFMJP108</div>
+<div class="price-row"><span class="discount">60%</span><span class="origin">₩130,000</span><span class="price">₩52,630</span></div>
+<div class="review">★ 4.9 <span class="review-n">(37)</span></div>
+<div class="badges"><span class="badge badge-weak">함께 산 1명</span></div>
+</div>
+</a>
+<a class="prod-card" href="https://athler.kr/product/3665052" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/S7bTCpalHaFThUlxBD5ZzwvL_zgiEMDXdLsN_ezfd70.jpg" alt="오버핏 베이직 미니멀 집업 레더 자켓 DRJP9267" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">후앙스</div>
+<div class="name">오버핏 베이직 미니멀 집업 레더 자켓 DRJP9267</div>
+<div class="price-row"><span class="discount">71%</span><span class="origin">₩216,300</span><span class="price">₩61,800</span></div>
+<div class="review">★ 5.0 <span class="review-n">(24)</span></div>
+<div class="badges"><span class="badge badge-weak">함께 산 1명</span></div>
+</div>
+</a>
+<a class="prod-card" href="https://athler.kr/product/4664748" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/382879-162f1808-b39f-4b2b-8975-bbc51b09b4c2.jpg" alt="메이플 포켓 기모 조거팬츠" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">SNP GOLF</div>
+<div class="name">메이플 포켓 기모 조거팬츠</div>
+<div class="price-row"><span class="discount">50%</span><span class="origin">₩68,000</span><span class="price">₩34,000</span></div>
+<div class="review">★ 4.9 <span class="review-n">(55)</span></div>
+<div class="badges"><span class="badge badge-weak">함께 산 1명</span></div>
 </div>
 </a>
         </div>
-    </section>
+    </details>
 
     <section>
         <div class="section-head">
             <div>
-                <div class="section-title">🧭 비슷한 상품</div>
-                <div class="section-sub">상품 맵 위 인접 (substitute, fallback)</div>
+                <div class="section-title secondary">🧭 맵에서 비슷한 상품</div>
+                <div class="section-sub">상품 임베딩 맵 위 인접 (substitute fallback)</div>
             </div>
-            <div class="section-meta">10개 · 신상품·저트래픽 fallback</div>
+            <div class="section-meta">10개</div>
         </div>
-        <div class="carousel">
+        <div class="carousel compact">
 <a class="prod-card" href="https://athler.kr/product/4699719" target="_blank" rel="noopener">
 <div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/93936-a276e52c-b5e9-4ea1-9505-85b171dcc316.jpg" alt="[1+2] 솔리드 맨즈 카라티셔츠" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
 <div class="info">
@@ -610,10 +584,9 @@ footer {
     </section>
 
     <footer>
-        P2V-MAP · Athler 추천 미리보기 · 시드 PID 4799712 · 썸네일은 athler.co.kr API 라이브
+        P2V-MAP · Athler PDP 추천 v2 (카테고리 분리) · 시드 PID 4799712<br>
+        썸네일·가격·리뷰 athler.co.kr API 라이브 · 추천 user-day browse + lifetime purchase
     </footer>
-
 </div>
-
 </body>
 </html>
