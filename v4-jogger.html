@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="utf-8"><title>PDP 추천 v4 — 시그니처 로고 조거 팬츠</title>
+<style>* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif; background: #f7f7f8; color: #1a1a1a; line-height: 1.5; }
+.wrap { max-width: 1280px; margin: 0 auto; padding: 24px; }
+.header { background: #fff; padding: 16px 24px; border-bottom: 1px solid #e5e5e5; display: flex; align-items: center; gap: 12px; }
+.logo { font-weight: 800; font-size: 20px; }
+.crumb { color: #888; font-size: 13px; }
+.version-tag { margin-left: auto; padding: 4px 10px; background: #fff0f6; color: #c2185b; border-radius: 4px; font-size: 11px; font-weight: 700; }
+.seed-hero { background: #fff; border-radius: 12px; padding: 32px; margin-bottom: 24px; display: grid; grid-template-columns: 360px 1fr; gap: 32px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+.seed-thumb-wrap { width: 100%; aspect-ratio: 1; border-radius: 8px; overflow: hidden; background: #f0f0f0; }
+.seed-thumb-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.seed-info h1 { font-size: 24px; font-weight: 700; margin: 8px 0; line-height: 1.3; }
+.seed-brand { font-size: 14px; color: #555; font-weight: 600; }
+.seed-price-row { margin-top: 16px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.seed-discount { font-size: 18px; font-weight: 800; color: #d6336c; }
+.seed-origin { font-size: 16px; color: #999; text-decoration: line-through; }
+.seed-sale { font-size: 28px; font-weight: 800; }
+.seed-stats { margin-top: 24px; padding-top: 16px; border-top: 1px solid #f0f0f0; display: flex; gap: 20px; font-size: 13px; color: #555; flex-wrap: wrap; }
+.seed-stats span strong { color: #1a1a1a; font-weight: 700; }
+.seed-link { display: inline-block; margin-top: 16px; padding: 10px 16px; background: #1a1a1a; color: #fff; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600; }
+.method-box { background: linear-gradient(135deg, #fff0f6 0%, #ffe0eb 100%); border-left: 4px solid #d6336c; padding: 16px 20px; border-radius: 6px; font-size: 13px; color: #761d3e; margin-bottom: 24px; }
+.method-box strong { color: #4a0e26; }
+.method-box code { background: rgba(255,255,255,0.5); padding: 1px 6px; border-radius: 3px; font-size: 12px; }
+section { margin-bottom: 40px; }
+.section-head { display: flex; justify-content: space-between; align-items: end; margin-bottom: 16px; padding: 0 4px; }
+.section-title { font-size: 22px; font-weight: 800; }
+.section-sub { font-size: 13px; color: #888; margin-top: 4px; }
+.section-meta { font-size: 12px; color: #888; text-align: right; }
+.cat-group { margin-bottom: 28px; }
+.cat-header { font-size: 16px; font-weight: 700; padding: 8px 12px; background: #f8f9fa; border-left: 3px solid #d6336c; margin-bottom: 12px; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; }
+.cat-header .cat-meta { font-size: 11px; color: #888; font-weight: 500; }
+.carousel { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.prod-card { background: #fff; border-radius: 8px; overflow: hidden; text-decoration: none; color: inherit; display: flex; flex-direction: column; border: 1px solid #f0f0f0; transition: transform 0.15s, box-shadow 0.15s; }
+.prod-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.1); }
+.thumb-wrap { width: 100%; aspect-ratio: 1; background: #f5f5f7; overflow: hidden; }
+.thumb { width: 100%; height: 100%; object-fit: cover; display: block; }
+.no-thumb { background: linear-gradient(135deg, #f5f5f7, #e8e8ec); }
+.no-thumb-text { display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 12px; }
+.info { padding: 10px 12px; }
+.brand { font-size: 11px; color: #555; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; }
+.name { font-size: 13px; line-height: 1.3; margin: 4px 0 6px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 33px; }
+.price-row { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+.discount { font-size: 13px; font-weight: 800; color: #d6336c; }
+.origin { font-size: 11px; color: #aaa; text-decoration: line-through; }
+.price { font-size: 14px; font-weight: 700; }
+.review { font-size: 11px; color: #555; margin-top: 4px; }
+.review-n { color: #999; }
+.badges { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 4px; }
+.badge { font-size: 10px; padding: 2px 6px; border-radius: 3px; font-weight: 600; line-height: 1.4; }
+.badge-cat { background: #fff0f6; color: #c2185b; }
+.badge-sim { background: #e7f5ff; color: #1971c2; }
+.badge-data { background: #d3f9d8; color: #2b8a3e; }
+.badge-rule { background: #f1f3f5; color: #495057; }
+footer { margin-top: 48px; padding: 24px; text-align: center; color: #888; font-size: 12px; }</style></head>
+<body>
+<header class="header">
+    <span class="logo">athler</span>
+    <span class="crumb">상품 / 하의 / PDP 추천 v4</span>
+    <span class="version-tag">v4 · 카테고리 추상화 + 임베딩 NN</span>
+</header>
+<div class="wrap">
+    <div class="seed-hero">
+        <div class="seed-thumb-wrap"><img src="https://bindcdn.co.kr/12-052bcd17-dc63-4633-a814-0dbecd5aea48.jpg" alt="시그니처 로고 조거 팬츠"></div>
+        <div class="seed-info">
+            <div class="seed-brand">타미힐피거</div>
+            <h1>시그니처 로고 조거 팬츠</h1>
+            <div class="seed-price-row"><span class="seed-discount">34% 할인</span><span class="seed-origin">₩50,000</span><span class="seed-sale">₩32,900</span></div>
+            <div style="margin-top:8px;font-size:13px;color:#555">★ 4.8 <span style="color:#999">(273개 리뷰)</span></div>
+            <div class="seed-stats">
+                <span>카테고리: <strong>하의 · 캐주얼/포멀</strong></span>
+                <span>상품 ID: <strong>3323228</strong></span>
+            </div>
+            <a class="seed-link" href="https://athler.kr/product/3323228" target="_blank" rel="noopener">athler.kr 실제 페이지 ↗</a>
+        </div>
+    </div>
+
+    <div class="method-box">
+        <strong>👔 이 상품과 함께 입어보세요 · 추천 알고리즘 v4 (Hybrid)</strong><br>
+        <strong>Step 1 · 카테고리 추상화</strong>: <code>data.product_sales_transactions</code> + <code>orders_order</code>의 lifetime 22,185 multi-baskets에서 <strong>하의</strong>가 자주 함께 구매된 카테고리 추출 (lift≥1.2). 데이터가 부족한 의류 카테고리는 도메인 코디 룰로 보완.<br>
+        <strong>Step 2 · 임베딩 NN</strong>: 각 보완 카테고리 안에서 시드 상품의 P2V 벡터(300d, browse 학습)와 cosine 유사도가 가장 높은 상품 4개씩 선택.<br>
+        → 결과 추천 15개 (실데이터 카테고리: 0개 / 코디 룰 카테고리: 15개)
+    </div>
+
+    
+<div class="cat-group">
+    <div class="cat-header">
+        <span>👔 상의 코디</span>
+        <span class="cat-meta"><span style="color:#666">코디 룰 기반 (참고: lifetime n=1,977, lift=0.93)</span> · 임베딩 NN 4개</span>
+    </div>
+    <div class="carousel">
+<a class="prod-card" href="https://athler.kr/product/3323226" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/12-1707cdcd-e8cb-40eb-baf1-aa40af243ecb.jpg" alt="시그니처 로고 후디" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">타미힐피거</div>
+<div class="name">시그니처 로고 후디</div>
+<div class="price-row"><span class="discount">23%</span><span class="origin">₩50,000</span><span class="price">₩38,600</span></div>
+<div class="review">★ 4.9 <span class="review-n">(238)</span></div>
+<div class="badges"><span class="badge badge-cat">상의</span><span class="badge badge-sim">유사도 0.67</span><span class="badge badge-rule">코디룰</span></div>
+</div></a>
+<a class="prod-card" href="https://athler.kr/product/3323227" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/854550-84c49322-842e-492b-b61f-3c6be332370c.jpg" alt="시그니처 로고 롱 슬리브" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">타미힐피거</div>
+<div class="name">시그니처 로고 롱 슬리브</div>
+<div class="price-row"><span class="discount">34%</span><span class="origin">₩50,000</span><span class="price">₩32,900</span></div>
+<div class="review">★ 4.9 <span class="review-n">(294)</span></div>
+<div class="badges"><span class="badge badge-cat">상의</span><span class="badge badge-sim">유사도 0.61</span><span class="badge badge-rule">코디룰</span></div>
+</div></a>
+<a class="prod-card" href="https://athler.kr/product/3403601" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/46881-741151e4-4e04-4e54-8199-35873cb842e9.jpg" alt="메쉬 긴팔 집업 후디" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">라코스테</div>
+<div class="name">메쉬 긴팔 집업 후디</div>
+<div class="price-row"><span class="discount">44%</span><span class="origin">₩212,000</span><span class="price">₩119,000</span></div>
+<div class="review">★ 5.0 <span class="review-n">(116)</span></div>
+<div class="badges"><span class="badge badge-cat">상의</span><span class="badge badge-sim">유사도 0.47</span><span class="badge badge-rule">코디룰</span></div>
+</div></a>
+<a class="prod-card" href="https://athler.kr/product/2677205" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/Pee8yuCb2-10mx5r1tVyHW8ghp6nZ5ie6RJH-q8QaYM.jpg" alt="09T4224 990 Thermal 써멀 스트라이프 와플 긴팔티" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">타미힐피거</div>
+<div class="name">09T4224 990 Thermal 써멀 스트라이프 와플 긴팔티</div>
+<div class="price-row"><span class="discount">27%</span><span class="origin">₩58,900</span><span class="price">₩43,100</span></div>
+
+<div class="badges"><span class="badge badge-cat">상의</span><span class="badge badge-sim">유사도 0.43</span><span class="badge badge-rule">코디룰</span></div>
+</div></a>
+    </div>
+</div>
+<div class="cat-group">
+    <div class="cat-header">
+        <span>👔 셔츠 코디</span>
+        <span class="cat-meta"><span style="color:#666">코디 룰 기반 (참고: lifetime n=4,476, lift=0.92)</span> · 임베딩 NN 4개</span>
+    </div>
+    <div class="carousel">
+<a class="prod-card" href="https://athler.kr/product/3323524" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/46881-dae76266-126a-4788-ae67-e1c8b5d26b2f.jpg" alt="크루넥 긴팔 티셔츠" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">타미힐피거</div>
+<div class="name">크루넥 긴팔 티셔츠</div>
+<div class="price-row"><span class="discount">34%</span><span class="origin">₩50,000</span><span class="price">₩32,900</span></div>
+<div class="review">★ 5.0 <span class="review-n">(246)</span></div>
+<div class="badges"><span class="badge badge-cat">셔츠</span><span class="badge badge-sim">유사도 0.53</span><span class="badge badge-rule">코디룰</span></div>
+</div></a>
+<a class="prod-card" href="https://athler.kr/product/3403605" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/46881-7cb8148c-ae5c-4dae-87b0-91a7bf965b07.jpg" alt="하프집업 코튼 스웨트 셔츠" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">라코스테</div>
+<div class="name">하프집업 코튼 스웨트 셔츠</div>
+<div class="price-row"><span class="discount">46%</span><span class="origin">₩219,000</span><span class="price">₩119,000</span></div>
+<div class="review">★ 4.9 <span class="review-n">(197)</span></div>
+<div class="badges"><span class="badge badge-cat">셔츠</span><span class="badge badge-sim">유사도 0.41</span><span class="badge badge-rule">코디룰</span></div>
+</div></a>
+<a class="prod-card" href="https://athler.kr/product/3380892" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/kLzLqs1xDt-gTOt-ixYSTldGLPT3R5f5JZCWTRIjI9E.jpg" alt="긴팔 크루넥 티셔츠 09T4112-004" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">타미힐피거</div>
+<div class="name">긴팔 크루넥 티셔츠 09T4112-004</div>
+<div class="price-row"><span class="discount">49%</span><span class="origin">₩60,900</span><span class="price">₩30,900</span></div>
+
+<div class="badges"><span class="badge badge-cat">셔츠</span><span class="badge badge-sim">유사도 0.40</span><span class="badge badge-rule">코디룰</span></div>
+</div></a>
+<a class="prod-card" href="https://athler.kr/product/4359004" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/778776-20f544da-8aee-414c-a597-1ce3e348566e.jpg" alt="UCLA 기모 스웨트셔츠(UZWLTV2)" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">UCLA</div>
+<div class="name">UCLA 기모 스웨트셔츠(UZWLTV2)</div>
+<div class="price-row"><span class="discount">73%</span><span class="origin">₩59,000</span><span class="price">₩15,900</span></div>
+<div class="review">★ 5.0 <span class="review-n">(239)</span></div>
+<div class="badges"><span class="badge badge-cat">셔츠</span><span class="badge badge-sim">유사도 0.39</span><span class="badge badge-rule">코디룰</span></div>
+</div></a>
+    </div>
+</div>
+<div class="cat-group">
+    <div class="cat-header">
+        <span>👔 아우터 코디</span>
+        <span class="cat-meta"><span style="color:#666">코디 룰 기반 (참고: lifetime n=7,401, lift=0.95)</span> · 임베딩 NN 4개</span>
+    </div>
+    <div class="carousel">
+<a class="prod-card" href="https://athler.kr/product/3570214" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/12-41acf722-1a9a-425a-bbcc-124de171b5a4.jpg" alt="마이크로 트월 자켓" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">타미힐피거</div>
+<div class="name">마이크로 트월 자켓</div>
+<div class="price-row"><span class="discount">69%</span><span class="origin">₩288,000</span><span class="price">₩89,800</span></div>
+<div class="review">★ 4.9 <span class="review-n">(286)</span></div>
+<div class="badges"><span class="badge badge-cat">아우터</span><span class="badge badge-sim">유사도 0.48</span><span class="badge badge-rule">코디룰</span></div>
+</div></a>
+<a class="prod-card" href="https://athler.kr/product/2185846" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/57285-d1d2b64b-313a-42ad-81b0-f6a1960930a1.jpg" alt="타미진 뱃지 후드 DM0DM10904-C87 네이비" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">타미힐피거</div>
+<div class="name">타미진 뱃지 후드 DM0DM10904-C87 네이비</div>
+<div class="price-row"><span class="discount">65%</span><span class="origin">₩279,000</span><span class="price">₩99,000</span></div>
+<div class="review">★ 4.9 <span class="review-n">(17)</span></div>
+<div class="badges"><span class="badge badge-cat">아우터</span><span class="badge badge-sim">유사도 0.44</span><span class="badge badge-rule">코디룰</span></div>
+</div></a>
+<a class="prod-card" href="https://athler.kr/product/3314837" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/_JtRT7QVDVedGJ1RR6yKSET4r_tT8mZFR0kR7FB1Y3M.jpg" alt="24FW 타미힐피거 자켓 MW0MW36650 DW5 [해외배송]" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">타미힐피거</div>
+<div class="name">24FW 타미힐피거 자켓 MW0MW36650 DW5 [해외배송]</div>
+<div class="price-row"><span class="discount">57%</span><span class="origin">₩1,360,000</span><span class="price">₩584,000</span></div>
+<div class="review">★ 5.0 <span class="review-n">(1)</span></div>
+<div class="badges"><span class="badge badge-cat">아우터</span><span class="badge badge-sim">유사도 0.42</span><span class="badge badge-rule">코디룰</span></div>
+</div></a>
+<a class="prod-card" href="https://athler.kr/product/4153391" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/SXEj3n1j8kGaeczRAyYm9lF3OA6QgvCk-tVp2BWdo7g.jpg" alt="코튼 블렌드 라운지 쇼트 09T4153 2종1택" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">타미힐피거</div>
+<div class="name">코튼 블렌드 라운지 쇼트 09T4153 2종1택</div>
+<div class="price-row"><span class="discount">71%</span><span class="origin">₩99,000</span><span class="price">₩29,000</span></div>
+<div class="review">★ 4.9 <span class="review-n">(54)</span></div>
+<div class="badges"><span class="badge badge-cat">아우터</span><span class="badge badge-sim">유사도 0.41</span><span class="badge badge-rule">코디룰</span></div>
+</div></a>
+    </div>
+</div>
+<div class="cat-group">
+    <div class="cat-header">
+        <span>👔 신발 코디</span>
+        <span class="cat-meta"><span style="color:#666">코디 룰 기반 (참고: lifetime n=1,422, lift=0.75)</span> · 임베딩 NN 3개</span>
+    </div>
+    <div class="carousel">
+<a class="prod-card" href="https://athler.kr/product/3937730" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/Ll_vmFP5JroWo0fK043IctSEf4BvKXmJ1R58WbtSDYI.jpg" alt="아디다스 슬리퍼 알파리스폰스 슬라이드 2.0 (JP5397)" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">아디다스</div>
+<div class="name">아디다스 슬리퍼 알파리스폰스 슬라이드 2.0 (JP5397)</div>
+<div class="price-row"><span class="discount">7%</span><span class="origin">₩54,500</span><span class="price">₩50,500</span></div>
+<div class="review">★ 5.0 <span class="review-n">(1)</span></div>
+<div class="badges"><span class="badge badge-cat">신발</span><span class="badge badge-sim">유사도 0.36</span><span class="badge badge-rule">코디룰</span></div>
+</div></a>
+<a class="prod-card" href="https://athler.kr/product/4014662" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/E2k0j-roWfoFpP9jkRC7nuZBhkLvVLBKoaGUAFkH1wQ.jpg" alt="호카 런닝화 운동화 클리프톤 10 WIDE (1162032-BBLC)" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">호카 오네 오네</div>
+<div class="name">호카 런닝화 운동화 클리프톤 10 WIDE (1162032-BBLC)</div>
+<div class="price-row"><span class="price">₩280,500</span></div>
+
+<div class="badges"><span class="badge badge-cat">신발</span><span class="badge badge-sim">유사도 0.34</span><span class="badge badge-rule">코디룰</span></div>
+</div></a>
+<a class="prod-card" href="https://athler.kr/product/3553646" target="_blank" rel="noopener">
+<div class="thumb-wrap"><img class="thumb" src="https://bindcdn.co.kr/93936-564fc9a4-c23a-4961-b1cd-e6ea7347cb61.jpg" alt="오리지널 드로즈 2종세트" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('no-thumb')"></div>
+<div class="info">
+<div class="brand">아디다스</div>
+<div class="name">오리지널 드로즈 2종세트</div>
+<div class="price-row"><span class="discount">20%</span><span class="origin">₩24,900</span><span class="price">₩19,900</span></div>
+<div class="review">★ 5.0 <span class="review-n">(16)</span></div>
+<div class="badges"><span class="badge badge-cat">신발</span><span class="badge badge-sim">유사도 0.34</span><span class="badge badge-rule">코디룰</span></div>
+</div></a>
+    </div>
+</div>
+
+    <footer>
+        P2V-MAP · Athler PDP 추천 v4 (Hybrid) · 시드 PID 3323228<br>
+        카테고리 페어 lifetime 22,185 baskets · 임베딩 19,965 products × 300d · 메타 athler.co.kr API 라이브
+    </footer>
+</div></body></html>
